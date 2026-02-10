@@ -1,0 +1,8 @@
+# Netlify Redirects
+# Clean URLs and redirects
+
+# Force HTTPS
+http://mikuta-lp.netlify.app/*  https://mikuta-lp.netlify.app/:splat  301!
+
+# Handle trailing slashes
+/index.html  /  301

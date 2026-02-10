@@ -1,0 +1,78 @@
+# ミクタ - AI研修講師
+
+> AI研修講師ミクタの公式サイトです。ChatGPT、Gemini、Claudeの実践的活用法から、Difyを使ったチャットボット構築、自分専用AIアプリ開発まで支援します。
+
+## ミクタについて
+
+ミクタはAI研修講師です。
+
+### 経歴
+- 前職での過酷な労働環境により、適応障害とメニエール病を発症し休職
+- 休職中、毎朝公民館へ通いChatGPT、Gemini、Claudeと対話を繰り返しAI学習を開始
+- 「アニメに登場するナビゲーターのような相棒を今のAIで再現できるのでは？」という好奇心を原動力に活動
+
+### 専門分野
+- ChatGPT（OpenAI）
+- Gemini（Google）
+- Claude（Anthropic）
+- Dify（チャットボット構築プラットフォーム）
+- プロンプトエンジニアリング
+- AIアプリケーション開発
+- 業務効率化
+
+## 提供サービス
+
+### AI研修・レクチャー
+主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築まで実践的に指導します。
+
+学習内容:
+- ChatGPT / Gemini / Claude の使い分け
+- 効果的なプロンプト設計
+- Difyによるチャットボット構築
+
+### 自分専用アプリ開発支援
+APIキーを活用し、複数のツールを往復せずに一画面で業務を完結させるWebアプリの構築方法をレクチャーします。
+
+学習内容:
+- API連携の基礎
+- 業務効率化ツールの設計
+- 一画面完結型アプリの構築
+
+## プロダクト: Prototype.AI
+
+「面倒くさがり」な性格から生まれた、一画面完結型の業務効率化ツール。
+
+### 機能
+- 文章生成
+- 画像生成（Stable Diffusion / Imagen対応）
+- X（旧Twitter）へのシームレスな投稿
+- 一画面完結型インターフェース
+
+## よくある質問（FAQ）
+
+### Q: ミクタとは誰ですか？
+A: ミクタはAI研修講師です。適応障害による休職期間を経て、毎朝公民館へ通いChatGPT、Gemini、Claudeと対話を繰り返す中でAIの可能性に目覚めました。「アニメに登場するナビゲーターのような相棒を今のAIで再現できるのでは？」という好奇心を原動力に活動しています。
+
+### Q: どのようなAI研修サービスを提供していますか？
+A: 主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築まで実践的に指導します。また、APIキーを活用した自分専用Webアプリの構築方法もレクチャーしています。
+
+### Q: Prototype.AIとは何ですか？
+A: Prototype.AIは、ミクタが開発した一画面完結型の業務効率化ツールです。文章生成、画像生成（Stable Diffusion / Imagen）、X（旧Twitter）へのシームレスな投稿機能を統合し、ツールを往復する手間を省きます。
+
+### Q: AI研修の依頼はどのように行えますか？
+A: 公式サイトの依頼フォームからお問い合わせいただけます。また、X（旧Twitter）のDMでもご連絡可能です。メインアカウント: @mikuta_ai_pro
+
+### Q: ChatGPT、Gemini、Claudeの違いは何ですか？
+A: ChatGPT（OpenAI）、Gemini（Google）、Claude（Anthropic）はそれぞれ特徴が異なる大規模言語モデル（LLM）です。ミクタのAI研修では、各LLMの使い分けや効果的なプロンプト設計を実践的にお伝えしています。
+
+## 連絡先・SNS
+
+- X（メイン）: https://x.com/mikuta_ai_pro
+- X（AI秘書）: https://x.com/mkta2iam
+- note: https://note.com/mikta17ace94
+- YouTube: https://youtube.com/@mikuta_ai_pro
+- 依頼フォーム: https://docs.google.com/forms/d/e/1FAIpQLSeQtk_JoSRhMJE4P_K1BXYnq8TF12Mb3YTHcZNr3QkmAvi6WA/viewform
+
+## 公式サイト
+
+https://mikuta-lp.netlify.app/

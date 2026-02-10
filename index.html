@@ -1,231 +1,499 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
 <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ミクタ | AI研修講師 - あなたの"AI相棒"づくりをサポート</title>
-    <meta name="description" content="AI研修講師ミクタ。ChatGPT、Gemini、Claudeの活用法から、Difyを使ったチャットボット構築、自分専用AIアプリ開発まで支援します。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>ミクタ | AI研修講師 - ChatGPT・Gemini・Claude活用とAIアプリ開発支援</title>
+    <meta name="title" content="ミクタ | AI研修講師 - ChatGPT・Gemini・Claude活用とAIアプリ開発支援">
+    <meta name="description" content="AI研修講師ミクタ。ChatGPT、Gemini、Claudeの実践的活用法、Difyを使ったチャットボット構築、自分専用AIアプリ開発を支援。適応障害からの復職経験を持ち、AIを「相棒」として活用する方法をお伝えします。">
+    <meta name="keywords" content="AI研修,AI講師,ChatGPT研修,Gemini研修,Claude研修,Dify,チャットボット構築,AIアプリ開発,プロンプトエンジニアリング,業務効率化,ミクタ,AI活用,LLM研修,生成AI研修">
+    <meta name="author" content="ミクタ">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="language" content="Japanese">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mikuta-lp.netlify.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mikuta-lp.netlify.app/">
+    <meta property="og:title" content="ミクタ | AI研修講師 - あなたの"AI相棒"づくりをサポート">
+    <meta property="og:description" content="ChatGPT、Gemini、Claudeの実践的活用法から、Difyを使ったチャットボット構築、自分専用AIアプリ開発まで支援します。">
+    <meta property="og:image" content="https://mikuta-lp.netlify.app/ogp.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="ミクタ - AI研修講師">
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mikuta-lp.netlify.app/">
+    <meta name="twitter:title" content="ミクタ | AI研修講師 - あなたの"AI相棒"づくりをサポート">
+    <meta name="twitter:description" content="ChatGPT、Gemini、Claudeの実践的活用法から、Difyを使ったチャットボット構築、自分専用AIアプリ開発まで支援します。">
+    <meta name="twitter:image" content="https://mikuta-lp.netlify.app/ogp.svg">
+    <meta name="twitter:site" content="@mikuta_ai_pro">
+    <meta name="twitter:creator" content="@mikuta_ai_pro">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data for SEO & AEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "@id": "https://mikuta-lp.netlify.app/#website",
+                "url": "https://mikuta-lp.netlify.app/",
+                "name": "ミクタ - AI研修講師",
+                "description": "AI研修講師ミクタの公式サイト。ChatGPT、Gemini、Claudeの活用法からAIアプリ開発まで支援します。",
+                "publisher": {
+                    "@id": "https://mikuta-lp.netlify.app/#person"
+                },
+                "inLanguage": "ja-JP"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://mikuta-lp.netlify.app/#webpage",
+                "url": "https://mikuta-lp.netlify.app/",
+                "name": "ミクタ | AI研修講師 - ChatGPT・Gemini・Claude活用とAIアプリ開発支援",
+                "isPartOf": {
+                    "@id": "https://mikuta-lp.netlify.app/#website"
+                },
+                "about": {
+                    "@id": "https://mikuta-lp.netlify.app/#person"
+                },
+                "description": "AI研修講師ミクタ。ChatGPT、Gemini、Claudeの実践的活用法、Difyを使ったチャットボット構築、自分専用AIアプリ開発を支援。",
+                "inLanguage": "ja-JP"
+            },
+            {
+                "@type": "Person",
+                "@id": "https://mikuta-lp.netlify.app/#person",
+                "name": "ミクタ",
+                "alternateName": "mikuta_ai_pro",
+                "description": "AI研修講師。適応障害による休職期間を経て、AIの可能性に目覚める。ChatGPT、Gemini、Claudeなど主要LLMの活用法を指導し、AIを「相棒」として活用する方法を伝えている。",
+                "jobTitle": "AI研修講師",
+                "knowsAbout": [
+                    "ChatGPT",
+                    "Google Gemini",
+                    "Anthropic Claude",
+                    "Dify",
+                    "プロンプトエンジニアリング",
+                    "チャットボット開発",
+                    "AIアプリケーション開発",
+                    "業務効率化",
+                    "生成AI活用"
+                ],
+                "sameAs": [
+                    "https://x.com/mikuta_ai_pro",
+                    "https://x.com/mkta2iam",
+                    "https://note.com/mikta17ace94",
+                    "https://youtube.com/@mikuta_ai_pro"
+                ],
+                "url": "https://mikuta-lp.netlify.app/"
+            },
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://mikuta-lp.netlify.app/#service",
+                "name": "ミクタ AI研修サービス",
+                "provider": {
+                    "@id": "https://mikuta-lp.netlify.app/#person"
+                },
+                "description": "ChatGPT、Gemini、ClaudeなどのLLM活用研修、Difyを使ったチャットボット構築、自分専用AIアプリ開発支援を提供",
+                "areaServed": "JP",
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "AI研修サービス一覧",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "AI研修・レクチャー",
+                                "description": "主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築までを実践的に指導します。"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "自分専用アプリ開発支援",
+                                "description": "APIキーを活用し、複数のツールを往復せずに一画面で業務を完結させるWebアプリの構築方法をレクチャーします。"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://mikuta-lp.netlify.app/#product",
+                "name": "Prototype.AI",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "description": "「面倒くさがり」な性格から生まれた、一画面完結型の業務効率化ツール。文章生成、画像生成（Stable Diffusion / Imagen）、X（旧Twitter）へのシームレスな投稿機能を統合。",
+                "author": {
+                    "@id": "https://mikuta-lp.netlify.app/#person"
+                },
+                "featureList": [
+                    "文章生成",
+                    "画像生成（Stable Diffusion / Imagen対応）",
+                    "X（旧Twitter）へのシームレスな投稿",
+                    "一画面完結型インターフェース"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://mikuta-lp.netlify.app/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "ミクタとは誰ですか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ミクタはAI研修講師です。適応障害による休職期間を経て、毎朝公民館へ通いChatGPT、Gemini、Claudeと対話を繰り返す中でAIの可能性に目覚めました。「アニメに登場するナビゲーターのような相棒を今のAIで再現できるのでは？」という好奇心を原動力に活動しています。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "どのようなAI研修サービスを提供していますか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築まで実践的に指導します。また、APIキーを活用した自分専用Webアプリの構築方法もレクチャーしています。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Prototype.AIとは何ですか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Prototype.AIは、ミクタが開発した一画面完結型の業務効率化ツールです。文章生成、画像生成（Stable Diffusion / Imagen）、X（旧Twitter）へのシームレスな投稿機能を統合し、ツールを往復する手間を省きます。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "AI研修の依頼はどのように行えますか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "公式サイトの依頼フォームからお問い合わせいただけます。また、X（旧Twitter）のDMでもご連絡可能です。メインアカウント: @mikuta_ai_pro"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "ChatGPT、Gemini、Claudeの違いは何ですか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ChatGPT（OpenAI）、Gemini（Google）、Claude（Anthropic）はそれぞれ特徴が異なる大規模言語モデル（LLM）です。ミクタのAI研修では、各LLMの使い分けや効果的なプロンプト設計を実践的にお伝えしています。"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://mikuta-lp.netlify.app/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "ホーム",
+                        "item": "https://mikuta-lp.netlify.app/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+
     <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-bg"></div>
-        <nav class="nav">
+    <header class="hero" role="banner">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <nav class="nav" role="navigation" aria-label="メインナビゲーション">
             <div class="nav-container">
-                <a href="#" class="logo">ミクタ</a>
+                <a href="/" class="logo" aria-label="ミクタ ホーム">ミクタ</a>
                 <ul class="nav-links">
                     <li><a href="#story">ストーリー</a></li>
                     <li><a href="#services">サービス</a></li>
                     <li><a href="#product">プロダクト</a></li>
+                    <li><a href="#faq">よくある質問</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
-                <button class="hamburger" aria-label="メニュー">
+                <button class="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
         </nav>
-        <div class="hero-content">
+        <div class="hero-content" id="main-content">
             <p class="hero-tagline">AI研修講師</p>
-            <h1 class="hero-title">
+            <h1 class="hero-title" itemprop="headline">
                 あなたの<span class="gradient-text">"AI相棒"</span>づくりを<br>サポートします
             </h1>
-            <p class="hero-description">
+            <p class="hero-description" itemprop="description">
                 アニメに登場するナビゲーターのような存在を、<br class="sp-hide">今のAIで実現してみませんか？
             </p>
             <a href="#contact" class="btn btn-primary">お問い合わせ</a>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" aria-hidden="true">
             <span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </header>
 
-    <!-- Story Section -->
-    <section id="story" class="story">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Story</span>
-                <h2 class="section-title">私のストーリー</h2>
-            </div>
-            <div class="story-content">
-                <div class="story-timeline">
-                    <div class="timeline-item" data-aos="fade-up">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-label">転機</span>
-                            <h3>休職からの再出発</h3>
-                            <p>前職での過酷な労働環境—長時間労働や理不尽な指示—により、適応障害とメニエール病を発症。休職を余儀なくされました。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-label">学習</span>
-                            <h3>毎朝の公民館通い</h3>
-                            <p>休職中の不安を解消するため、毎朝公民館へ通いAI学習を開始。ChatGPT、Gemini、Claudeと対話を繰り返す中で、新たな可能性を見出しました。</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-label">原動力</span>
-                            <h3>ナビゲーターへの憧れ</h3>
-                            <p>「アニメに登場するナビゲーターのような相棒を、今のAIで再現できるのでは？」—この好奇心が、私の原動力となりました。</p>
-                        </div>
-                    </div>
+    <main>
+        <!-- Story Section -->
+        <section id="story" class="story" aria-labelledby="story-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Story</span>
+                    <h2 class="section-title" id="story-title">私のストーリー</h2>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Services</span>
-                <h2 class="section-title">提供サービス</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                        </svg>
-                    </div>
-                    <h3>AI研修・レクチャー</h3>
-                    <p>主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築まで、実践的にお伝えします。</p>
-                    <ul class="service-features">
-                        <li>ChatGPT / Gemini / Claude の使い分け</li>
-                        <li>効果的なプロンプト設計</li>
-                        <li>Difyによるチャットボット構築</li>
-                    </ul>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                        </svg>
-                    </div>
-                    <h3>自分専用アプリ開発支援</h3>
-                    <p>APIキーを活用し、複数のツールを往復せずに一画面で業務を完結させるWebアプリの構築方法をレクチャーします。</p>
-                    <ul class="service-features">
-                        <li>API連携の基礎</li>
-                        <li>業務効率化ツールの設計</li>
-                        <li>一画面完結型アプリの構築</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section id="product" class="product">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Product</span>
-                <h2 class="section-title">Prototype.AI</h2>
-            </div>
-            <div class="product-content" data-aos="fade-up">
-                <div class="product-visual">
-                    <div class="product-mockup">
-                        <div class="mockup-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="mockup-content">
-                            <div class="mockup-sidebar">
-                                <div class="sidebar-item active"></div>
-                                <div class="sidebar-item"></div>
-                                <div class="sidebar-item"></div>
-                            </div>
-                            <div class="mockup-main">
-                                <div class="mockup-block"></div>
-                                <div class="mockup-block small"></div>
-                                <div class="mockup-block"></div>
+                <div class="story-content">
+                    <article class="story-timeline" itemscope itemtype="https://schema.org/Article">
+                        <meta itemprop="author" content="ミクタ">
+                        <div class="timeline-item" data-aos="fade-up">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">転機</span>
+                                <h3>休職からの再出発</h3>
+                                <p itemprop="articleBody">前職での過酷な労働環境—長時間労働や理不尽な指示—により、適応障害とメニエール病を発症。休職を余儀なくされました。</p>
                             </div>
                         </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">学習</span>
+                                <h3>毎朝の公民館通い</h3>
+                                <p>休職中の不安を解消するため、毎朝公民館へ通いAI学習を開始。<strong>ChatGPT</strong>、<strong>Gemini</strong>、<strong>Claude</strong>と対話を繰り返す中で、新たな可能性を見出しました。</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker" aria-hidden="true"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-label">原動力</span>
+                                <h3>ナビゲーターへの憧れ</h3>
+                                <p>「アニメに登場するナビゲーターのような相棒を、今のAIで再現できるのでは？」—この好奇心が、私の原動力となりました。</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Services</span>
+                    <h2 class="section-title" id="services-title">提供サービス</h2>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card" data-aos="fade-up" itemscope itemtype="https://schema.org/Service">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h3 itemprop="name">AI研修・レクチャー</h3>
+                        <p itemprop="description">主要LLM（<strong>ChatGPT</strong>、<strong>Gemini</strong>、<strong>Claude</strong>）の基本操作から、<strong>Dify</strong>を使ったチャットボット構築まで、実践的にお伝えします。</p>
+                        <ul class="service-features">
+                            <li>ChatGPT / Gemini / Claude の使い分け</li>
+                            <li>効果的なプロンプト設計</li>
+                            <li>Difyによるチャットボット構築</li>
+                        </ul>
+                    </article>
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100" itemscope itemtype="https://schema.org/Service">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 itemprop="name">自分専用アプリ開発支援</h3>
+                        <p itemprop="description"><strong>APIキー</strong>を活用し、複数のツールを往復せずに一画面で業務を完結させるWebアプリの構築方法をレクチャーします。</p>
+                        <ul class="service-features">
+                            <li>API連携の基礎</li>
+                            <li>業務効率化ツールの設計</li>
+                            <li>一画面完結型アプリの構築</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="product" class="product" aria-labelledby="product-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Product</span>
+                    <h2 class="section-title" id="product-title">Prototype.AI</h2>
+                </div>
+                <div class="product-content" data-aos="fade-up" itemscope itemtype="https://schema.org/SoftwareApplication">
+                    <meta itemprop="name" content="Prototype.AI">
+                    <meta itemprop="applicationCategory" content="BusinessApplication">
+                    <div class="product-visual">
+                        <div class="product-mockup" role="img" aria-label="Prototype.AIのインターフェースイメージ">
+                            <div class="mockup-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-sidebar">
+                                    <div class="sidebar-item active"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                </div>
+                                <div class="mockup-main">
+                                    <div class="mockup-block"></div>
+                                    <div class="mockup-block small"></div>
+                                    <div class="mockup-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-concept" itemprop="description">
+                            「面倒くさがり」な性格から生まれた、<br>
+                            <strong>一画面完結型の業務効率化ツール</strong>
+                        </p>
+                        <ul class="product-features">
+                            <li itemprop="featureList">
+                                <span class="feature-icon" aria-hidden="true">✍️</span>
+                                <span>文章生成</span>
+                            </li>
+                            <li itemprop="featureList">
+                                <span class="feature-icon" aria-hidden="true">🎨</span>
+                                <span>画像生成（Stable Diffusion / Imagen）</span>
+                            </li>
+                            <li itemprop="featureList">
+                                <span class="feature-icon" aria-hidden="true">📱</span>
+                                <span>X（旧Twitter）へのシームレスな投稿</span>
+                            </li>
+                        </ul>
+                        <p class="product-tagline">ツールを往復する手間を省き、アイデアをすぐ形に。</p>
                     </div>
                 </div>
-                <div class="product-info">
-                    <p class="product-concept">
-                        「面倒くさがり」な性格から生まれた、<br>
-                        <strong>一画面完結型の業務効率化ツール</strong>
-                    </p>
-                    <ul class="product-features">
-                        <li>
-                            <span class="feature-icon">✍️</span>
-                            <span>文章生成</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon">🎨</span>
-                            <span>画像生成（Stable Diffusion / Imagen）</span>
-                        </li>
-                        <li>
-                            <span class="feature-icon">📱</span>
-                            <span>X（旧Twitter）へのシームレスな投稿</span>
-                        </li>
-                    </ul>
-                    <p class="product-tagline">ツールを往復する手間を省き、アイデアをすぐ形に。</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section for AEO -->
+        <section id="faq" class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">FAQ</span>
+                    <h2 class="section-title" id="faq-title">よくある質問</h2>
+                </div>
+                <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                    <details class="faq-item" data-aos="fade-up" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">ミクタとは誰ですか？</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">ミクタはAI研修講師です。適応障害による休職期間を経て、毎朝公民館へ通いChatGPT、Gemini、Claudeと対話を繰り返す中でAIの可能性に目覚めました。「アニメに登場するナビゲーターのような相棒を今のAIで再現できるのでは？」という好奇心を原動力に活動しています。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" data-aos="fade-up" data-aos-delay="50" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">どのようなAI研修サービスを提供していますか？</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">主要LLM（ChatGPT、Gemini、Claude）の基本操作から、Difyを使ったチャットボット構築まで実践的に指導します。また、APIキーを活用した自分専用Webアプリの構築方法もレクチャーしています。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" data-aos="fade-up" data-aos-delay="100" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">Prototype.AIとは何ですか？</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Prototype.AIは、ミクタが開発した一画面完結型の業務効率化ツールです。文章生成、画像生成（Stable Diffusion / Imagen）、X（旧Twitter）へのシームレスな投稿機能を統合し、ツールを往復する手間を省きます。</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" data-aos="fade-up" data-aos-delay="150" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">AI研修の依頼はどのように行えますか？</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">公式サイトの依頼フォームからお問い合わせいただけます。また、X（旧Twitter）のDMでもご連絡可能です。メインアカウント: @mikuta_ai_pro</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" data-aos="fade-up" data-aos-delay="200" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary itemprop="name">ChatGPT、Gemini、Claudeの違いは何ですか？</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">ChatGPT（OpenAI）、Gemini（Google）、Claude（Anthropic）はそれぞれ特徴が異なる大規模言語モデル（LLM）です。ミクタのAI研修では、各LLMの使い分けや効果的なプロンプト設計を実践的にお伝えしています。</p>
+                        </div>
+                    </details>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">お問い合わせ・フォロー</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title" id="contact-title">お問い合わせ・フォロー</h2>
+                </div>
+                <p class="contact-description">
+                    AI活用についてのご相談、研修のご依頼など<br>お気軽にお問い合わせください。
+                </p>
+                <div class="form-cta" data-aos="fade-up">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQtk_JoSRhMJE4P_K1BXYnq8TF12Mb3YTHcZNr3QkmAvi6WA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large" aria-label="依頼フォームを開く（新しいタブ）">
+                        <span class="btn-icon" aria-hidden="true">📩</span>
+                        依頼フォームはこちら
+                    </a>
+                </div>
+                <div class="social-links" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://x.com/mikuta_ai_pro" target="_blank" rel="noopener noreferrer me" class="social-card" aria-label="X（メイン）@mikuta_ai_pro を開く">
+                        <div class="social-icon x-icon" aria-hidden="true">𝕏</div>
+                        <span class="social-name">X（メイン）</span>
+                        <span class="social-handle">@mikuta_ai_pro</span>
+                    </a>
+                    <a href="https://x.com/mkta2iam" target="_blank" rel="noopener noreferrer" class="social-card" aria-label="X（AI秘書）@mkta2iam を開く">
+                        <div class="social-icon x-icon" aria-hidden="true">𝕏</div>
+                        <span class="social-name">X（AI秘書）</span>
+                        <span class="social-handle">@mkta2iam</span>
+                    </a>
+                    <a href="https://note.com/mikta17ace94" target="_blank" rel="noopener noreferrer me" class="social-card" aria-label="noteを開く">
+                        <div class="social-icon note-icon" aria-hidden="true">📝</div>
+                        <span class="social-name">note</span>
+                        <span class="social-handle">ミクタのnote</span>
+                    </a>
+                    <a href="https://youtube.com/@mikuta_ai_pro" target="_blank" rel="noopener noreferrer me" class="social-card" aria-label="YouTubeチャンネルを開く">
+                        <div class="social-icon youtube-icon" aria-hidden="true">▶</div>
+                        <span class="social-name">YouTube</span>
+                        <span class="social-handle">@mikuta_ai_pro</span>
+                    </a>
+                </div>
             </div>
-            <p class="contact-description">
-                AI活用についてのご相談、研修のご依頼など<br>お気軽にお問い合わせください。
-            </p>
-            <div class="form-cta" data-aos="fade-up">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQtk_JoSRhMJE4P_K1BXYnq8TF12Mb3YTHcZNr3QkmAvi6WA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
-                    <span class="btn-icon">📩</span>
-                    依頼フォームはこちら
-                </a>
-            </div>
-            <div class="social-links" data-aos="fade-up" data-aos-delay="100">
-                <a href="https://x.com/mikuta_ai_pro?s=21" target="_blank" rel="noopener noreferrer" class="social-card">
-                    <div class="social-icon x-icon">𝕏</div>
-                    <span class="social-name">X（メイン）</span>
-                    <span class="social-handle">@mikuta_ai_pro</span>
-                </a>
-                <a href="https://x.com/mkta2iam?s=21" target="_blank" rel="noopener noreferrer" class="social-card">
-                    <div class="social-icon x-icon">𝕏</div>
-                    <span class="social-name">X（AI秘書）</span>
-                    <span class="social-handle">@mkta2iam</span>
-                </a>
-                <a href="https://note.com/mikta17ace94" target="_blank" rel="noopener noreferrer" class="social-card">
-                    <div class="social-icon note-icon">📝</div>
-                    <span class="social-name">note</span>
-                    <span class="social-handle">ミクタのnote</span>
-                </a>
-                <a href="https://youtube.com/@mikuta_ai_pro?si=lWUhWNTtYmoCYe8q" target="_blank" rel="noopener noreferrer" class="social-card">
-                    <div class="social-icon youtube-icon">▶</div>
-                    <span class="social-name">YouTube</span>
-                    <span class="social-handle">@mikuta_ai_pro</span>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p class="footer-text">&copy; 2024 ミクタ. All rights reserved.</p>
+            <p class="footer-text">&copy; <time datetime="2024">2024</time> ミクタ. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

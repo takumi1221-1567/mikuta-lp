@@ -570,6 +570,94 @@ section {
     font-weight: 500;
 }
 
+/* ===== FAQ Section ===== */
+.faq {
+    background: var(--dark-light);
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.faq-item[open] {
+    border-color: var(--primary);
+}
+
+.faq-item summary {
+    padding: 20px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    transition: var(--transition);
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.faq-item[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.faq-item summary:hover {
+    color: var(--primary-light);
+}
+
+.faq-answer {
+    padding: 0 24px 20px;
+    color: var(--gray-light);
+    line-height: 1.8;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+/* ===== Skip Link (Accessibility) ===== */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    z-index: 9999;
+    transition: var(--transition);
+}
+
+.skip-link:focus {
+    top: 20px;
+}
+
 /* ===== Contact Section ===== */
 .contact {
     background: var(--dark);

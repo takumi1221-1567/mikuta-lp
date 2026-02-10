@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="50%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="70%" cy="70%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-grad)"/>
+
+  <!-- Glow effects -->
+  <ellipse cx="360" cy="200" rx="400" ry="300" fill="url(#glow1)"/>
+  <ellipse cx="840" cy="500" rx="350" ry="250" fill="url(#glow2)"/>
+
+  <!-- Tagline -->
+  <text x="600" y="180" font-family="sans-serif" font-size="28" fill="#818cf8" text-anchor="middle" letter-spacing="4">AI研修講師</text>
+
+  <!-- Main Title -->
+  <text x="600" y="280" font-family="sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">ミクタ</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="380" font-family="sans-serif" font-size="36" fill="url(#text-grad)" text-anchor="middle">あなたの"AI相棒"づくりを</text>
+  <text x="600" y="440" font-family="sans-serif" font-size="36" fill="url(#text-grad)" text-anchor="middle">サポートします</text>
+
+  <!-- Keywords -->
+  <text x="600" y="540" font-family="sans-serif" font-size="24" fill="#94a3b8" text-anchor="middle">ChatGPT | Gemini | Claude | Dify | AIアプリ開発</text>
+
+  <!-- URL -->
+  <text x="600" y="600" font-family="sans-serif" font-size="20" fill="#64748b" text-anchor="middle">mikuta-lp.netlify.app</text>
+</svg>
