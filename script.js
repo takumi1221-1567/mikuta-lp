@@ -103,6 +103,25 @@ window.addEventListener('load', () => {
     }, 100);
 });
 
+// ===== Screenshots Slider =====
+(function() {
+    const slides = document.querySelectorAll('.screenshot-slide');
+    const dots = document.querySelectorAll('.dot-indicator');
+    if (!slides.length) return;
+
+    let current = 0;
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = index;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+    setInterval(() => goTo((current + 1) % slides.length), 3500);
+})();
+
 // ===== Add entrance animation styles =====
 const style = document.createElement('style');
 style.textContent = `
