@@ -470,6 +470,67 @@ section {
     border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
+/* Screenshots slider */
+.product-screenshots {
+    width: 100%;
+    max-width: 520px;
+}
+
+.screenshots-slider {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    background: var(--dark-light);
+}
+
+.screenshot-slide {
+    display: none;
+    flex-direction: column;
+}
+
+.screenshot-slide.active {
+    display: flex;
+}
+
+.screenshot-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.screenshot-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--gray-light);
+    padding: 10px 16px;
+    margin: 0;
+    background: rgba(15, 23, 42, 0.8);
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.screenshots-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.dot-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(99, 102, 241, 0.3);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.dot-indicator.active {
+    background: var(--primary);
+    transform: scale(1.2);
+}
+
 .mockup-header {
     display: flex;
     gap: 8px;
