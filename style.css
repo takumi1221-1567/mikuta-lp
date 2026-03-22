@@ -494,10 +494,18 @@ section {
     display: flex;
 }
 
+.screenshot-img-wrapper {
+    overflow: hidden;
+    line-height: 0;
+}
+
 .screenshot-slide img {
     width: 100%;
     height: auto;
     display: block;
+    /* ブラウザのURLバー部分を隠す（上から約8%をクロップ） */
+    margin-top: -8%;
+    margin-bottom: -2%;
 }
 
 .screenshot-caption {
@@ -824,11 +832,35 @@ section {
     }
 
     .product-visual {
+        width: 100%;
         order: -1;
     }
 }
 
 @media (max-width: 768px) {
+    .product-screenshots {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .screenshots-slider {
+        width: 100%;
+    }
+
+    .screenshot-slide {
+        display: none;
+        width: 100%;
+    }
+
+    .screenshot-slide.active {
+        display: block;
+    }
+
+    .screenshot-slide img {
+        width: 100%;
+        height: auto;
+    }
+
     .nav-links {
         position: fixed;
         top: 0;
