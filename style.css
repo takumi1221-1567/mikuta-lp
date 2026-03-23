@@ -495,21 +495,8 @@ section {
 }
 
 .screenshot-img-wrapper {
-    position: relative;
     overflow: hidden;
     line-height: 0;
-}
-
-/* URLバーのテキスト部分だけを隠すオーバーレイ */
-.screenshot-img-wrapper::after {
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 27%;
-    right: 27%;
-    height: 4%;
-    background: #e0e0e0;
-    border-radius: 100px;
 }
 
 .screenshot-slide img {
